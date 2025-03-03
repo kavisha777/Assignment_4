@@ -87,23 +87,23 @@
                   <br><br>
                   <div class="ml-180">
                         <ul class="flex text-center space-x-2 ml-18">
-                              <li class="hover:text-orange-500">All</li>
-                              <li class="hover:text-orange-500">Fiction</li>
-                              <li class="hover:text-orange-500">Non Fiction</li>
-                              <li class="hover:text-orange-500">Self Development</li>
+                              <li class="filter-btn hover:text-orange-500" onclick="filterbook('All')">All</li>
+                              <li class="filter-btn hover:text-orange-500" onclick="filterbook('Fiction')">Fiction</li>
+                              <li class="filter-btn hover:text-orange-500" onclick="filterbook('NonFiction')">Non-Fiction</li>
+                              <li class="filter-btn hover:text-orange-500" onclick="filterbook('SelfDevelopment')">Self-Development</li>
                         </ul>
                   </div>
                   <br><br>
                   <div class="grid grid-cols-3 gap-0">
-                       <a href="product.html"> <img src="Assets/images/B1.png" class="h-64 w-64 ml-150 mb-5"> </a>
-                        <img src="Assets/images/B2.jpg" class="h-64 w-64 ml-75">
-                        <img src="Assets/images/B3.jpg" class="h-64 w-64">
-                        <img src="Assets/images/B4.png" class="h-64 w-64 ml-150">
-                        <img src="Assets/images/B5.png" class="h-64 w-64 ml-75">
-                        <img src="Assets/images/B6.jpg" class="h-64 w-64">
-                        <img src="Assets/images/B7.webp" class="h-74 w-64 ml-150 py-4">
-                        <img src="Assets/images/B8.avif" class="h-74 w-64 ml-75 py-4">
-                        <img src="Assets/images/B9.jpg" class="h-74 w-64 py-4">
+                       <a href="product.html"> <img src="Assets/images/B1.png" class="book SelfDevelopment h-64 w-64 ml-150 mb-5"> </a>
+                        <img src="Assets/images/B2.jpg" class="book Fiction h-64 w-64 ml-75">
+                        <img src="Assets/images/B3.jpg" class="book SelfDevelopment h-64 w-64">
+                        <img src="Assets/images/B4.png" class="book SelfDevelopment h-64 w-64 ml-150">
+                        <img src="Assets/images/B5.png" class="book Fiction h-64 w-64 ml-75">
+                        <img src="Assets/images/B6.jpg" class="book Fiction h-64 w-64 inline-block">
+                        <img src="Assets/images/B7.webp" class="book Fiction h-74 w-64 ml-150 py-4">
+                        <img src="Assets/images/B8.avif" class="book Fiction h-74 w-64 ml-75 py-4">
+                        <img src="Assets/images/B9.jpg" class="book NonFiction h-74 w-64 py-4">
                   </div>
             </div>
             </section>
@@ -185,5 +185,23 @@
                         <p>Designed By KAVI</p>
                   </div>
             </footer>
+
+
+<script>
+            function filterbook(category) {
+                  document.querySelectorAll(".book").forEach(item => {
+                      if (category === 'All' || item.classList.contains(category)) {
+                          item.classList.remove("hidden"); // Show matching items
+                      } else {
+                          item.classList.add("hidden"); // Hide non-matching items
+                      }
+                  });
+              }
+
+</script>
+
+            
+
+           
 </body>
 </html>
