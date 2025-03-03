@@ -2,30 +2,31 @@
 <html>  
 <head>    
             <meta charset="UTF-8" />    
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+            <title>shelf Space</title> 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
             <script src="https://unpkg.com/@tailwindcss/browser@4"></script>  
 </head>  
 <body>    
             <section>
-                  <nav class="bg-white w-full h-10 flex justify-center items-center">
+                  <nav class="fixed top-0 bg-white w-full h-10 flex justify-center items-center">
                    <div class="flex">
-                        <div class="mr-128"> 
+                        <div class="mr-128 my-auto"> 
                               <a>Shelf Space</a>
                         </div>
                         <div class="justify-between mx-auto space-x-4">
-                              <a href="#" class="hover:text-orange-500">Home</a>
-                              <a href="#" class="hover:text-orange-500">About Us</a>
-                              <a href="#" class="hover:text-orange-500">Services</a>
-                              <a href="#" class="hover:text-orange-500"></a>
-                              <a href="#" class="hover:text-orange-500">Team</a>
-                              <button class="hover:text-orange-500">Drop down &#9662;</button>
-                              <a href="#" class="hover:text-orange-500">Contact</a>
-                              <button href="#" class="hover:text-orange-500 text-white border rounded-full p-1 bg-orange-500 hover:bg-white">Get started</button>
+                              <a href="#Home" class="hover:text-orange-500">Home</a>
+                              <a href="#services" class="hover:text-orange-500">About Us</a>
+                              <a href="#services" class="hover:text-orange-500">Services</a>
+                              <a href="#team" class="hover:text-orange-500">Team</a>
+                              <a href="#portfolio" class="hover:text-orange-500">Drop down &#9662;</a>
+                              <a href="#contact" class="hover:text-orange-500">Contact</a>
+                              <a href="#services" class="hover:text-orange-500 text-white border rounded-full p-1 bg-orange-500 hover:bg-white">Get started</a>
                         </div>
                    </div>
                   </nav>
             </section>
-            <section  style="background-color:rgb(73, 95, 134);">
+            <section  class="bg-[#d6c3a8]" id="Home">
             <div class="flex">
                    <div class="grid items-center justify-center h-full p-50">
                            <h1 class="text-4xl">Step into Shelf Space</h1><br>
@@ -33,7 +34,7 @@
                            <button class="bg-orange-500 hover:bg-orange-700 text-white mx-20 py-2">Get Started</button>
                    </div>
                    <div>
-                         <img src="Assets/images/section2.jpg" class="w-160 h-148 ml-18">
+                         <img src="Assets/images/number1.png" class="w-160 h-148 ml-115">
                    </div>
 
             </div>
@@ -42,64 +43,75 @@
 
 
 
-            <section>
-                  <div class="flex">
+            <section id="services">
+                  <div class="flex mt-16">
                          <div>
-                              <img src="Assets/images/suggest.jpg" class="w-128">
+                              <img src="Assets/images/number2.png" class="w-450 h-150">
                          </div>
-                         <div>
+                         <div class="ml-18">
                               <div>
-                                 <h1 class="text-4xl text-orange-500 text-center">Not sure what to read next? Let us help you find the perfect book!</h1>
+                                 <h1 class="text-4xl text-left">Not sure what to read next? Let us help you find the perfect book!</h1>
                                  <p class="text-left">Not sure what to read next? We've got you covered! Whether you're looking for a gripping thriller, a heartwarming romance, or a thought-provoking non-fiction book, our recommendations are here to guide you. Explore our carefully curated selections, discover hidden gems, and find books tailored to your interests.</p>
                               </div>
-                              <div>
+                              <br><br>
+                              <div class="flex">
                                    <div>
-                                         <h1>[Expert Picks]</h1>
+                                         <button class="hover:bg-[#d6c3a8] hover:text-white">
+                                          <img src="Assets/images/bulb.png" class="h-10 w-10">
+                                         <h1 class="text-left">[Expert Picks]</h1>
                                          <p>Our team selects top books based on your interests</p>
+                                         </button>
                                     </div>
-                                    <div>
-                                          <h1>[Member Favorites]</h1>
+                                    
+                                    <div class="ml-12">
+                                          <button class="hover:bg-[#d6c3a8] hover:text-white">
+                                          <img src="Assets/images/heart.png" class="h-10 w-10">
+                                          <h1 class="text-left">[Member Favorites]</h1>
                                           <p>See what's trending among our readers</p>
+                                         </button>
                                     </div>
                               </div>
                          </div>
                   </div>
             </section>
 
+<br><br><br>
 
 
-
-            <section>
+            <section id="portfolio">
             <div class="text-center">
                   <div>
                        <h1>Shelf Portfolio</h1>
-                       <h1>Check out our fantastic portfolio</h1>
+                       <h1 class="relative after:content-[] after:block after:w-16 after:h-[2px] after:bg-orange-500 after:mt-5 after:items-center after:ml-220 text-3xl">Check out our fantastic portfolio</h1>
                   </div>
+                  <br><br>
                   <div class="ml-180">
-                        <ul class="flex text-center space-x-2">
-                              <li>All</li>
-                              <li>Fiction</li>
-                              <li>Non Fiction</li>
-                              <li>Self Development</li>
-                              <li>Relationship</li>
+                        <ul class="flex text-center space-x-2 ml-18">
+                              <li class="hover:text-orange-500">All</li>
+                              <li class="hover:text-orange-500">Fiction</li>
+                              <li class="hover:text-orange-500">Non Fiction</li>
+                              <li class="hover:text-orange-500">Self Development</li>
                         </ul>
                   </div>
-                  <div class="">
-                        <img src="Assets/images/B1.png" class="h-128 w-128">
-                        <img src="Assets/images/B2.jpg" class="h-128 w-128">
-                        <img src="Assets/images/B3.jpg" class="h-128 w-128">
-                        <img src="Assets/images/B4.png" class="h-128 w-128">
-                        <img src="Assets/images/B5.png" class="h-128 w-128">
-                        <img src="Assets/images/B6.jpg" class="h-128 w-128">
-                        <img src="">
+                  <br><br>
+                  <div class="grid grid-cols-3 gap-0">
+                       <a href="product.html"> <img src="Assets/images/B1.png" class="h-64 w-64 ml-150 mb-5"> </a>
+                        <img src="Assets/images/B2.jpg" class="h-64 w-64 ml-75">
+                        <img src="Assets/images/B3.jpg" class="h-64 w-64">
+                        <img src="Assets/images/B4.png" class="h-64 w-64 ml-150">
+                        <img src="Assets/images/B5.png" class="h-64 w-64 ml-75">
+                        <img src="Assets/images/B6.jpg" class="h-64 w-64">
+                        <img src="Assets/images/B7.webp" class="h-74 w-64 ml-150 py-4">
+                        <img src="Assets/images/B8.avif" class="h-74 w-64 ml-75 py-4">
+                        <img src="Assets/images/B9.jpg" class="h-74 w-64 py-4">
                   </div>
             </div>
             </section>
-
-            <section>
+<br><br>
+            <section id="team">
                   <div class="text-center">
-                      <h1>Team</h1>
-                      <h1>Our team is always here to help</h1>
+                      <h1 class="text-orange-200 text-xl">Team</h1><br>
+                      <h1 class="relative after:content-[] after:block after:w-16 after:h-[2px] after:bg-orange-500 after:mt-5 after:items-center after:ml-220 text-3xl">Our team is always here to help</h1>
                   </div>
                   <div class="flex w-80 space-x-30 h-80 p-6 ml-18">
                         <img src="Assets/images/Team1.jpg">
@@ -112,46 +124,60 @@
 
 
 
-            <section>
-                  <h1>Clients</h1>
-                  <h1>They Trusted us</h1>
-                  <div>
-                        
+            <section class="bg-[#d6c3a8] w-full h-90">
+                  <div class="text-center"> 
+                      <h1 class="text-orange-100 text-xl">Clients</h1><br>
+                      <h1 class="relative after:content-[] after:block after:w-16 after:h-[2px] after:bg-orange-500 after:mt-5 after:items-center after:ml-220 text-3xl">They Trusted us</h1>
                   </div>
+                  <br><br><br>
+                  <div class="flex justify-center items-center gap-18">
+                        <img src="Assets/images/logo1.webp" class="w-32 h-32">
+                        <img src="Assets/images/logo2.jpg" class="w-32 h-32">
+                        <img src="Assets/images/logo3.jpg" class="w-32 h-32">
+                        <img src="Assets/images/logo3.png" class="w-32 h-32">
+                        <img src="Assets/images/logo4.png" class="w-32 h-32">
+                        <img src="Assets/images/logo5.jpg" class="w-32 h-32">
+                  </div> 
             </section>
 
-            <footer>
-                  <div class="flex justify-between gap-3">
-                        <div>
+            <footer id="contact">
+                  <div class="flex justify-between mx-auto">
+                        <div class="ml-16">
+                              <h3 class="text-xl">Shelf Space</h3>
                               <p>Vathiry,Karaveddy<br>
                               Jaffna,<br>Srilanka</p>
                               <br><br>
-                              <p><span class="font-semibold">Phone </span>+94 123456789</p>                
-                              <p><span class="font-semibold">Email</span>shelfinfo@gmail.com</p>
+                              <p><span class="font-semibold">Phone: </span>+94 123456789</p>                
+                              <p><span class="font-semibold">Email: </span>shelfinfo@gmail.com</p>
                         </div>
                         <div class="grid">
                               <h3>Useful Links</h3>
                               <div class="grid">
-                                    <a>Home</a>
-                                    <a>About Us</a>
-                                    <a>Services</a>
-                                    <a>Terms of service</a>
-                                    <a>Privacy policy</a>
+                                    <a><span class="text-orange-500">&rAarr;</span>Home</a>
+                                    <a><span class="text-orange-500">&rAarr;</span>About Us</a>
+                                    <a><span class="text-orange-500">&rAarr;</span>Services</a>
+                                    <a><span class="text-orange-500">&rAarr;</span>Terms of service</a>
+                                    <a><span class="text-orange-500">&rAarr;</span>Privacy policy</a>
                               </div>
                         </div>
                         <div>
                               <h3>Our Services</h3>
                               <div>
                                     <ul>
-                                          <li>Book Review</li>
-                                          <li>E-books</li>
-                                          <li>Online Orders</li>
-                                          <li>Workshop</li>
+                                          <li><span class="text-orange-500">&rAarr;</span>Book Review</li>
+                                          <li><span class="text-orange-500">&rAarr;</span>E-books</li>
+                                          <li><span class="text-orange-500">&rAarr;</span>Online Orders</li>
+                                          <li><span class="text-orange-500">&rAarr;</span>Workshop</li>
                                     </ul>
                               </div>
                         </div>
-                        <div>
+                        <div class="mr-16">
                               <h3>Our Social Networks</h3>
+                              <div class="flex justify-between">
+                                 <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i> </a>
+                                 <a href="https://x.com/?lang=en"> <i class="fab fa-twitter"></i> </a>
+                                 <a href="https://lk.linkedin.com/"> <i class="fab fa-linkedin-in"></i> </a>
+                              </div>
                         </div>
                   </div>
                   <div>
